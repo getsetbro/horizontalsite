@@ -5,8 +5,12 @@
     <title>Horizontalsite by getsetbro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style media="screen">
-    html,body,.tbl,.tr,.td,.cont{
+    html,body{
         height: 100%;
+
+    }
+    .tbl,.tr,.td,.cont{
+        height: 100vh;
     }
     body{margin:0;}
     body *{box-sizing:border-box;}
@@ -16,7 +20,8 @@
     .cont{
     width:100vw;
     background-color:pink;
-    border-right:1px solid hotpink;
+    border:1px solid hotpink;
+    border-width:0 1px;
     position: relative;
     text-align: center;
     font-size: 9rem
@@ -51,7 +56,7 @@
     <script src="//code.jquery.com/jquery-1.9.1.js" charset="utf-8"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js" charset="utf-8"></script>
     <script type="text/javascript">
-      $("body").mousewheel(function(event, delta) {
+      $(document.body).mousewheel(function(event, delta) {
         this.scrollLeft -= (delta * 30);
         event.preventDefault();
       });
