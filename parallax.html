@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cssparallax by getsetbro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      html, body{
+        height: 100%;/*fallback*/
+        height: 100vh;
+      }
+      body{
+        overflow: hidden;
+        font-family: sans-serif;
+        margin: 0;
+      }
+      ul,li{
+        list-style: none outside none;
+        margin:0;
+        padding: 0;
+      }
+      ul{
+        display: table;
+      }
+      li{
+        display: table-cell;
+      }
+      section,article{
+        height: 100vh;
+      }
+      section{
+        overflow-x: auto;
+        overflow-y: hidden;
+        perspective:300px;
+      }
+      article{
+        position: relative;
+        overflow: hidden;
+        width:100vw;
+      }
+
+      aside, header{
+        position: absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+      }
+      aside{
+        transform: translateZ(-600px) scale(3);
+      }
+      header{
+        top:25vh;
+        padding:0 55px;
+        text-align: center;
+        color:white;
+        font-size: 7vh;
+        transform: translateZ(0);
+
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+    <ul>
+    <li>
+      <article>
+        <aside>
+          <video id="rVid" class="vid" autoplay="autoplay" loop="loop" muted="">
+            <!--<source src="http://risenchurch.com/wp-content/themes/risen/images/rl.mp4" type="video/mp4" ></source>-->
+            <source src="http://player.vimeo.com/external/115872342.hd.mp4?s=25095f04f8bed40559ad223944cad6f4" type="video/mp4">            
+            <source src="http://risenchurch.com/wp-content/themes/risen/images/rc.ogv" type="video/ogg">
+            Your browser does not support the video tag.
+          </video>
+        </aside>
+        <header>Eus beatae ex, libero sapiente tempora quidem voluptatum, cum sit recusandae deleniti vel!</header>
+      </article>
+      </li>
+      <li>
+      <article>
+        <aside>
+          <img src="http://risenchurch.com/wp-content/uploads/2014/11/sundayhome8-8web.jpg" alt="">
+        </aside>
+        <header>Excepturi dolorem sed ut, laboriosam at. Dicta doloremque est rem odio voluptatibus.</header>
+      </article>
+      </li>
+      <li>
+      <article>
+        <aside>
+          <img src="http://risenchurch.com/wp-content/uploads/2013/11/smallGroups4.jpg" alt="">
+        </aside>
+        <header>Eplicabo soluta dolor consequuntur vel placeat molestias, ad amet, earum saepe voluptatibus suscipit, consequatur?</header>
+      </article>
+      </li>
+      <li>
+      <article>
+        <aside>
+          <img src="http://risenchurch.com/wp-content/uploads/2014/11/serve67-8.jpg" alt="">
+        </aside>
+        <header>Ebus esse ut nam aliquid at sunt nostrum, voluptate debitis totam error enim tenetur.</header>
+      </article>
+      </li>
+      <li>
+      <article>
+        <aside>
+          <img src="http://risenchurch.com/wp-content/uploads/2014/11/eventsHome-31.jpg" alt="">
+        </aside>
+        <header>Eta consectetur delectus vero. Tempore ut assumenda expedita, laborum dolorum, quibusdam iste error!</header>
+      </article>
+      </li>
+      <li>
+      <article>
+        <aside>
+          <img src="http://risenchurch.com/wp-content/uploads/2014/11/sundayhome8-8web.jpg" alt="">
+        </aside>
+        <header>Excepturi dolorem sed ut, laboriosam at. Dicta doloremque est rem odio voluptatibus.</header>
+      </article>
+      </li>
+      <li>
+      <article>
+        <aside>
+          <img src="http://risenchurch.com/wp-content/uploads/2013/11/smallGroups4.jpg" alt="">
+        </aside>
+        <header>Eplicabo soluta dolor consequuntur vel placeat molestias, ad amet, earum saepe voluptatibus suscipit, consequatur?</header>
+      </article>
+      </li>
+      <li>
+      <article>
+        <aside>
+          <img src="http://risenchurch.com/wp-content/uploads/2014/11/serve67-8.jpg" alt="">
+        </aside>
+        <header>Ebus esse ut nam aliquid at sunt nostrum, voluptate debitis totam error enim tenetur.</header>
+      </article>
+      </li>
+      <li>
+      <article>
+        <aside>
+          <img src="http://risenchurch.com/wp-content/uploads/2014/11/eventsHome-31.jpg" alt="">
+        </aside>
+        <header>Eta consectetur delectus vero. Tempore ut assumenda expedita, laborum dolorum, quibusdam iste error!</header>
+      </article>
+      </li>
+      <li>
+      <article>
+        <aside style="background-color:gray">
+        </aside>
+        <header>Ereiciendis deleniti inventore necessitatibus, temporibus facere architecto sed! Enim minus esse, commodi.</header>
+      </article>
+      </li>
+      </ul>
+    </section>
+  </body>
+</html>
