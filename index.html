@@ -5,61 +5,59 @@
     <title>Horizontalsite by getsetbro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style media="screen">
-    html,body{
-        height: 100%;
 
+    body{
+      margin:0;
+      font: 50px/1 sans-serif; 
     }
-    .tbl,.tr,.td,.cont{
-        height: 100vh;
-    }
-    body{margin:0;}
     body *{box-sizing:border-box;}
-    .tbl{display: table;}
-    .tr{display:table-row;}
-    .td{display:table-cell;}
+    ul,li{
+      display: block;
+      list-style: none outside none;
+      margin: 0;
+      padding: 0;
+    }
+    .t1{display:table;}
+    .t2{display:table-row;}
+    .t3{display:table-cell;}
     .cont{
-    width:100vw;
-    background-color:pink;
-    border:1px solid hotpink;
-    border-width:0 1px;
-    position: relative;
-    text-align: center;
-    font-size: 9rem
+      width:100vw;
+      background-color:pink;
+      border:1px solid hotpink;
+      border-width:0 1px;
+      position: relative;
+      text-align: center;
+      height: 100vh;
+    }
+    p{
+      margin: 0;
+      padding-top: 40vh
     }
     </style>
   </head>
   <body>
-    <div class="tbl">
-      <div class="tr">
-        <div class="td"><div class="cont">0</div></div>
-        <div class="td"><div class="cont">1</div></div>
-        <div class="td"><div class="cont">2</div></div>
-        <div class="td"><div class="cont">3</div></div>
-        <div class="td"><div class="cont">4</div></div>
-        <div class="td"><div class="cont">5</div></div>
-        <div class="td"><div class="cont">6</div></div>
-        <div class="td"><div class="cont">7</div></div>
-        <div class="td"><div class="cont">8</div></div>
-        <div class="td"><div class="cont">9</div></div>
-        <div class="td"><div class="cont">10</div></div>
-        <div class="td"><div class="cont">11</div></div>
-        <div class="td"><div class="cont">12</div></div>
-        <div class="td"><div class="cont">13</div></div>
-        <div class="td"><div class="cont">14</div></div>
-        <div class="td"><div class="cont">15</div></div>
-        <div class="td"><div class="cont">16</div></div>
-        <div class="td"><div class="cont">17</div></div>
-        <div class="td"><div class="cont">18</div></div>
-        <div class="td"><div class="cont">19</div></div>
-      </div>
+    <div class="t1">
+      <ul class="t2">
+        <li class="t3"><div class="cont"><p>001</p></div></li>
+        <li class="t3"><div class="cont"><p>002</p></div></li>
+        <li class="t3"><div class="cont"><p>003</p></div></li>
+        <li class="t3"><div class="cont"><p>004</p></div></li>
+        <li class="t3"><div class="cont"><p>005</p></div></li>
+        <li class="t3"><div class="cont"><p>006</p></div></li>
+        <li class="t3"><div class="cont"><p>007</p></div></li>
+        <li class="t3"><div class="cont"><p>008</p></div></li>
+        <li class="t3"><div class="cont"><p>009</p></div></li>
+      </ul>
     </div>
-    <script src="//code.jquery.com/jquery-1.9.1.js" charset="utf-8"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js" charset="utf-8"></script>
+    <script charset="utf-8" src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script charset="utf-8" src="//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
     <script type="text/javascript">
-      $(document.body).mousewheel(function(event, delta) {
-        this.scrollLeft -= (delta * 30);
+      $('body').on('mousewheel', function(event) {
+        this.scrollLeft -= (event.deltaY);
+        //console.log(event.deltaX, event.deltaY, event.deltaFactor);
         event.preventDefault();
       });
+
     </script>
   </body>
 </html>
